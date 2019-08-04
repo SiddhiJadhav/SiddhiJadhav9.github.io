@@ -261,6 +261,7 @@ svg{
 .projectitem{
     padding: 3% 3%;
     display: flex;
+    flex-direction:colomn;
     justify-content: space-evenly;
     align-content: center;
     flex-wrap: wrap;
@@ -294,9 +295,9 @@ svg{
 }
 
 
-/* media querry............................................................................................................... */
-@media (max-width: 800px) {
+
+@media only screen and (min-width: 768px) {
   .projectitem{
-    flex-direction: column;
+    flex-direction: row;
   }
 }
