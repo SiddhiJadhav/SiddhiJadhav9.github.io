@@ -32,6 +32,7 @@ var texts = ["Hi, I'm Siddhi.","Welcome to my Webspace"];
   
 })();
 
+
 $(document).ready(function(){
   $(window).scroll(function(){
   	var scroll = $(window).scrollTop();
