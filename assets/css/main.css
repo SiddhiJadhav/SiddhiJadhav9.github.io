@@ -11,6 +11,7 @@ html {
 
 #tag{
   color: #ffffff;
+  
   font-size: 2rem;
   font-weight: 600;
   letter-spacing: 0.2rem;
@@ -300,11 +301,15 @@ svg{
     
    
 }
+#projectitems button.btn{
+  color: #fd5f00;
+  border: 2px solid #fd5f00;
+}
 
 #projectitems button.btn:hover{
-    border:1px solid #589FFF;
+    border:1px solid #fd5f00;
     color: white;
-    background-color: #589FFF;
+    background-color: #fd5f00;
 }
 
 #projectimage{
@@ -335,3 +340,35 @@ svg{
 }
 
 }
+
+/* cetificate............................................................................................................. */
+
+
+/* contacts................................................................................................... */
+.contact{
+  margin: 0 auto;
+  width: 30vh;
+  height: 10vh;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+}
+
+.fa{
+  color: #fd5f00;
+}
+i{
+  font-size: 3px;
+}
+@media (min-width: 480px) {
+  .contact{
+    width: 50vh;
+    height: 20vh;
+
+  }
+ i{
+   font-size: 10vh;
+ }
+}
+
