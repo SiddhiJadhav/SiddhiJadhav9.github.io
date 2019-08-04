@@ -107,6 +107,12 @@ header {
   position: absolute;
   animation: blink 0.5s infinite;
 }
+
+@media (max-width: 800px) {
+  #type {
+    font-size: 2.9rem;
+  }
+}
 @keyframes blink {
   from {
     opacity: 1;
@@ -228,6 +234,12 @@ svg{
   width: 22vh;
 }
 
+@media (max-width: 800px) {
+  .skills h1{
+    font-size: 2rem;
+  }
+}
+
 /* projects............................................................................................................................... */
 .project{
     /* background-color: #F0F1F3; */
@@ -283,14 +295,7 @@ svg{
 
 /* media querry............................................................................................................... */
 @media (max-width: 800px) {
-  #type {
-    font-size: 2.9rem;
-  }
-  .skills h1{
-    font-size: 2rem;
-  }
   .projectitem{
     flex-direction: column;
   }
- 
 }
