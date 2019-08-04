@@ -11,29 +11,28 @@ html {
 
 #tag{
   color: #ffffff;
-  font-size: 3rem;
+  font-size: 2rem;
   font-weight: 600;
   letter-spacing: 0.2rem;
   text-align: center;
   margin: 0 auto;
-  border-bottom: 5px white solid;
-  width: 70vh;
+  /* border-bottom: 5px white solid; */
+  /* width: 50vh; */
 }
 
+@media (min-width: 480px) {
+  #tag{
+    font-size: 3rem;
+  }
+}
 
-/* media querry............................................................................................................... */
+/* media querry...............................................................................................................
 @media (max-width: 800px) {
   #type {
     font-size: 2.9rem;
   }
-  .skills h1{
-    font-size: 2rem;
-  }
-  .projectitem{
-    flex-direction: column;
-  }
- 
-}
+} */
+
 
 
 
@@ -92,7 +91,7 @@ header {
 #type {
   font-family: "Righteous", cursive;
   letter-spacing: 1.5px;
-  font-size: 6rem;
+  font-size: 2.3rem;
   position: relative;
   top: 35%;
   text-align: center;
@@ -109,11 +108,18 @@ header {
   animation: blink 0.5s infinite;
 }
 
-@media (max-width: 800px) {
+/* @media (max-width: 800px) {
   #type {
     font-size: 2.9rem;
   }
+} */
+
+@media (min-width: 480px) {
+  #type {
+    font-size: 6rem;
+  }
 }
+
 @keyframes blink {
   from {
     opacity: 1;
@@ -199,7 +205,7 @@ header {
 .skilltiles{
   /* background-color: #04122F; */
   display: flex;
-  flex-wrap: wrap;
+  flex-wrap:   wrap;
   justify-content: center;
   align-content: space-around;
   align-items: center;
@@ -208,21 +214,17 @@ header {
 
 
 .lang{
+  width: 17vh;
   background-color:#0D2251;
   display: flex;
   color: white;
   flex-direction: column;
-  
-  
-
   flex-wrap: nowrap;
   text-align: center;
   border-radius: 10%;
-
   box-shadow: 8px 8px 25px #000000;
-
-border: 2px solid white;
-  margin: 3vh;
+  border: 2px solid white;
+  margin: 2.5vh;
   padding: 2vh; 
 }
 
@@ -231,15 +233,30 @@ border: 2px solid white;
 }
 
 svg{
-  height: 22vh;
-  width: 22vh;
+  height: 10vh;
+  width: 10vh;
 }
 
+@media (min-width: 480px) {
+  .lang{
+    width: 27vh;
+  margin: 3vh;
+
+  }
+  svg{
+    height: 22vh;
+    width: 22vh;
+  }
+}
+/* 
 @media (max-width: 800px) {
   .skills h1{
     font-size: 2rem;
   }
-}
+} */
+
+
+
 
 /* projects............................................................................................................................... */
 .project{
@@ -259,17 +276,17 @@ svg{
 }
 
 .projectitem{
-    padding: 3% 3%;
+    padding: 2% 2%;
     display: flex;
-    flex-direction:colomn;
-    justify-content: space-evenly;
+    flex-direction: column;
+    justify-content: space-between;
     align-content: center;
     flex-wrap: wrap;
     
 }
 
 #projectitems{
-    width: 50vh;
+    width: 70vw;
     max-width: 25rem;
     background-color: white;
     padding: 2% 2%;
@@ -291,13 +308,30 @@ svg{
 }
 
 #projectimage{
-    width: 30vh;
+    width: 50vw;
 }
 
 
-
-@media only screen and (min-width: 768px) {
+/* media querry............................................................................................................... */
+/* @media (max-width: 800px) {
+  .projectitem{
+    flex-direction: column;
+  }
+} */
+@media (min-width: 480px) {
   .projectitem{
     flex-direction: row;
+    justify-content: space-evenly;
+
+    /* width: 50vh; */
   }
+  #projectitems{
+    width: 50vh;
+    
+
+  }
+  #projectimage{
+    width: 30vh;
+}
+
 }
