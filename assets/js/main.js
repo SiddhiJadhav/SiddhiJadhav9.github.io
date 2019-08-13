@@ -38,11 +38,17 @@ $(document).ready(function(){
   	var scroll = $(window).scrollTop();
 	  if (scroll > 400) {
       $("header").css("background-color" , "rgba(0, 0, 0, 0.9)");
+      $(".navc").css("color" , "rgb(255, 255, 255)");
+      // $(".navc:hover").css("border" , "none");
       
 	  }
 
 	  else{
-		  $("header").css("background-color" , "rgba(0, 0, 0, 0)");  	
+      $("header").css("background-color" , "rgba(0, 0, 0, 0)");
+      $(".navc").css("color" , "rgb(0, 0, 0)");
+      
+
+        	
 	  }
   })
 })
