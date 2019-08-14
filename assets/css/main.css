@@ -169,8 +169,8 @@ header {
 .about{
   height: 100vh;
   background-color: #E3F5F5;
-    border-top-left-radius: 40%;
-    border-top-right-radius: 40%;
+    /* border-top-left-radius: 20%; */
+    /* border-top-right-radius: 20%; */
   
   }
   
@@ -180,9 +180,11 @@ header {
 .skills{
   background-image: url("../images/black4.jfif");
   background-size: cover;
-  
-  max-width: 100%;
-  
+  /* min-height: 100%; */
+  /* width: 100%; */
+  /* max-width: 100%; */
+  background-position: center;
+  background-repeat: no-repeat;
   
 }
 
@@ -193,13 +195,14 @@ header {
   justify-content: center;
   align-content: space-around;
   align-items: center;
-  padding: 3vh;    
+  padding: 3vh;
+
 }
 
 
 .lang{
 
-  width: 16vh;
+  width: 10vh;
   background-color: rgba(255, 255, 255,0.2);
   display: flex;
   color: white;
@@ -208,14 +211,19 @@ header {
   text-align: center;
   border-radius: 10%;
   margin: 2.5vh;
-  padding: 2vh; 
+  padding: 2vh;
+  padding-bottom: 1vh;
+
 }
 
 svg{
-  height: 12vh;
-  width: 12vh;
+  height: 6vh;
+  width: 6vh;
 }
-
+.lang span{
+  font-size: 0.5rem;
+  padding-top: 1vh;
+}
 
 @media (min-width: 480px) {
   .lang{
@@ -227,6 +235,9 @@ svg{
     height: 22vh;
     width: 22vh;
   }
+  .lang span{
+    font-size: 1rem;
+  }
 }
 
 
@@ -236,8 +247,8 @@ svg{
 /* projects............................................................................................................................... */
 .project{
 background-color: #E3F5F5;
-  border-bottom-left-radius: 40%;
-  border-bottom-right-radius: 40%;
+  border-bottom-left-radius: 10%;
+  border-bottom-right-radius: 10%;
 
 }
 
@@ -252,7 +263,7 @@ background-color: #E3F5F5;
 }
 
 #projectitems{
-    width: 85vw;
+    width: 80vw;
     max-width: 25rem;
     background-color: white;
     padding: 2% 2%;
@@ -308,26 +319,49 @@ background-color: #E3F5F5;
     width: 30vh;
 }
 
+.project{
+  /* background-color: #E3F5F5; */
+    border-bottom-left-radius: 20%;
+    border-bottom-right-radius: 20%;
+  
+  }
+
 }
 
 /* cetificate............................................................................................................. */
-
-/* .carousel-item{
-  margin:0 15vh;
-} */
 
 #carousel-example-1z{
   margin: 5vh 0vh;
 }
 
-.carousel-inner img {
-  margin: auto;
-}
+    /* .cnmae {
+     padding:0 auto;
+      margin-bottom: -15vh;
+      font-size: 2rem;
+   
+  } */
+    .carousel-inner .carousel-item  img {
+    
+    /* height:360px; */
+    margin: auto;
+    /* width: 50vw;
+    height: 50vh; */
+    object-fit: contain;
+    
+    }
 
 @media (min-width: 480px) {
   #carousel-example-1z{
     margin: 10vh 0vh;
   }
+
+  .carousel-inner .carousel-item  img {
+    /* margin: auto; */
+    width: 50vw;
+    height: 50vh;
+    
+    }
+
    } 
 
 /* contacts................................................................................................... */
@@ -342,6 +376,7 @@ footer{
 
 }
 
+
 .fa{
   color: #1c6280;
   border:2px solid #1c6280;
@@ -354,12 +389,14 @@ footer{
   
 }
 .wrapper{
+  /* width: 20%; */
+  /* margin: 0 auto; */
   text-align: center;
   padding:2vh 0;
   background-color: #99DDDB;
-  /* border:2px solid black; */
-  border-bottom-left-radius: 50%;
-  border-bottom-right-radius: 50%;
+  /* border-top:5px solid #73D1CE; */
+  /* border-top-left-radius: 20%; */
+  /* border-top-right-radius: 20%; */
 }
 
 
@@ -370,13 +407,13 @@ footer{
 .copyright
 {
   color: #1c6280;
+  background-color: #73D1CE;
   font-weight: 600;
   padding: 2vh;
   font-size: 0.6rem;
   letter-spacing: 0.2rem;
   text-align: center;
   margin: 0;
-
 }
 
  @media (min-width: 480px) {
