@@ -58,7 +58,7 @@ $(document).ready(function(){
 });
 
 var btttn = document.getElementById("btttn");
-setInterval(btttn.click(),10000);
+setInterval(btttn.click(),1860000);
 
 
 function sleep(ms) {
