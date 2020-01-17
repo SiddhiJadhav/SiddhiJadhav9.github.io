@@ -1,36 +1,36 @@
 // 'use strict';
-var pause = 10;
-var speed = 5;
-var texts = ["Hi, I'm Siddhi.","Welcome to my Webspace"];
+// var pause = 10;
+// var speed = 5;
+// var texts = ["Hi, I'm Siddhi.","Welcome to my Webspace"];
 
-(function() {
-  var text = texts[0];
-  var cur = 0,
-    dir = 1,
-    cur_text = 0;
+// (function() {
+//   var text = texts[0];
+//   var cur = 0,
+//     dir = 1,
+//     cur_text = 0;
 
-  var s = 0;
+//   var s = 0;
 
-  setInterval(function loop() {
-    cur += dir;
-    if (cur < 0) {
-      cur = 0;
-      dir = -dir;
-      cur_text = (++cur_text) % 3;
-      text = texts[cur_text];
-    }
-    if (cur > text.length) {
-      cur = text.length;
-      if (s++ > pause) {
-        s = 0
-        dir = -dir;
-      }
-    }
-    // document.querySelector('#type').setAttribute('class', text.toLowerCase())
-    document.querySelector('#type').innerHTML = text.substring(0, cur);
-  }, 500 / speed)
+//   setInterval(function loop() {
+//     cur += dir;
+//     if (cur < 0) {
+//       cur = 0;
+//       dir = -dir;
+//       cur_text = (++cur_text) % 3;
+//       text = texts[cur_text];
+//     }
+//     if (cur > text.length) {
+//       cur = text.length;
+//       if (s++ > pause) {
+//         s = 0
+//         dir = -dir;
+//       }
+//     }
+//     // document.querySelector('#type').setAttribute('class', text.toLowerCase())
+//     document.querySelector('#type').innerHTML = text.substring(0, cur);
+//   }, 500 / speed)
   
-})();
+// })();
 
 
 $(document).ready(function(){
@@ -53,9 +53,9 @@ $(document).ready(function(){
   })
 })
 
-$(document).ready(function(){
-  $(".owl-carousel").owlCarousel();
-});
+// $(document).ready(function(){
+//   $(".owl-carousel").owlCarousel();
+// });
 
 var btttn = document.getElementById("btttn");
 setInterval(btttn.click(),1860000);
