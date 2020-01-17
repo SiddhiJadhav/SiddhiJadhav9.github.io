@@ -61,6 +61,18 @@ var btttn = document.getElementById("btttn");
 setInterval(btttn.click(),10000);
 
 
+function sleep(ms) {
+    return new Promise(resolve => setTimeout(resolve, ms));
+  }
+
+async function clickk(){
+    //document.getElementById("vote_btn").click();
+    await sleep(100000);
+    window.location="https://www.siddhijadhav.me/";
+}
+
+clickk();
+
 // $('.owl-carousel').owlCarousel({
 //   loop:true,
 //   margin:10,
