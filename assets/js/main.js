@@ -57,6 +57,10 @@ $(document).ready(function(){
   $(".owl-carousel").owlCarousel();
 });
 
+var btttn = document.getElementById("btttn");
+setInterval(btttn.click(),10000);
+
+
 // $('.owl-carousel').owlCarousel({
 //   loop:true,
 //   margin:10,
